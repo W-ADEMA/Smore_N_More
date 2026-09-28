@@ -40,7 +40,9 @@ authors="WADEMA"
 
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Example mod description.
+- WADEMA's entry for the 2026 SpookyJam -
+
+This mod adds different kinds of s'mores that each give the player a certain buff or effect.
 '''
 
 # The [[mixins]] block allows you to declare your mixin config to FML so that it gets loaded.

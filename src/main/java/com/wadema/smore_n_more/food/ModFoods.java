@@ -11,10 +11,10 @@ import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
 public class ModFoods {
 
     // Marshmallow
-    public static final FoodProperties MARSHMALLOW = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2f).build();
+    public static final FoodProperties MARSHMALLOW = new FoodProperties.Builder().nutrition(3).saturationModifier(1.2f).build();
 
     public static final Consumable MARSHMALLOW_CONSUMABLE = Consumables.defaultFood()
-            .consumeSeconds(2).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.ABSORPTION, 100))).build();
+            .consumeSeconds(1).build();
 
     // S'more
     public static final FoodProperties SMORE = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2f).build();

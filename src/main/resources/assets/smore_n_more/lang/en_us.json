@@ -1,0 +1,13 @@
+{
+  "itemGroup.smore_n_more": "Example Mod Tab",
+  "block.smore_n_more.example_block": "Example Block",
+  "item.smore_n_more.example_item": "Example Item",
+
+  "smore_n_more.configuration.title": "S'more N More Configs",
+  "smore_n_more.configuration.section.smore_n_more.common.toml": "S'more N More Configs",
+  "smore_n_more.configuration.section.smore_n_more.common.toml.title": "S'more N More Configs",
+  "smore_n_more.configuration.items": "Item List",
+  "smore_n_more.configuration.logDirtBlock": "Log Dirt Block",
+  "smore_n_more.configuration.magicNumberIntroduction": "Magic Number Text",
+  "smore_n_more.configuration.magicNumber": "Magic Number"
+}

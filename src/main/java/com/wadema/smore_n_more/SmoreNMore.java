@@ -1,5 +1,6 @@
 package com.wadema.smore_n_more;
 
+import com.wadema.smore_n_more.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -45,6 +46,8 @@ public class SmoreNMore {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        ModItems.register(modEventBus);
+
         NeoForge.EVENT_BUS.register(this);
 
         // Register the item to a creative tab
@@ -60,7 +63,10 @@ public class SmoreNMore {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.SMORE);
+            event.accept(ModItems.MARSHMALLOW);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

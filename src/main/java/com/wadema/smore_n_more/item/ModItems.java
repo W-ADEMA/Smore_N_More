@@ -11,8 +11,14 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SmoreNMore.MODID);
 
-    public static final DeferredItem<Item> MARSHMALLOW = ITEMS.registerSimpleItem("marshmallow");
+    // Non Edible item example:
+    // public static final DeferredItem<Item> MARSHMALLOW = ITEMS.registerSimpleItem("marshmallow");
 
+    // Marshmallow
+    public static final DeferredItem<Item> MARSHMALLOW = ITEMS.registerItem("marshmallow",
+            properties -> new Item(properties.food(ModFoods.MARSHMALLOW, ModFoods.MARSHMALLOW_CONSUMABLE)));
+
+    // S'more
     public static final DeferredItem<Item> SMORE = ITEMS.registerItem("smore",
             properties -> new Item(properties.food(ModFoods.SMORE, ModFoods.SMORE_CONSUMABLE)));
 

@@ -65,10 +65,6 @@ public class SmoreNMore {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(ModItems.SMORE);
-            event.accept(ModItems.MARSHMALLOW);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

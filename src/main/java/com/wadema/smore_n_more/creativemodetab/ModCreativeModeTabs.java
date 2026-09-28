@@ -16,11 +16,14 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, SmoreNMore.MODID);
 
     public static final Supplier<CreativeModeTab> SMORE_ITEMS_TAB = CREATIVE_MODE_TABS.register("smore_items_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SMORE.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MARSHMALLOW.get()))
                     .title(Component.translatable("creativetab.smore_n_more.smore_items"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.SMORE);
+
                         output.accept(ModItems.MARSHMALLOW);
+
+                        output.accept(ModItems.SMORE);
+
                     }).build());
 
     public static void register(IEventBus eventBus) {

@@ -1,5 +1,6 @@
 package com.wadema.smore_n_more;
 
+import com.wadema.smore_n_more.creativemodetab.ModCreativeModeTabs;
 import com.wadema.smore_n_more.item.ModItems;
 import org.slf4j.Logger;
 
@@ -46,6 +47,7 @@ public class SmoreNMore {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);

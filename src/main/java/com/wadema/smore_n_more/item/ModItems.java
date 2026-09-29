@@ -11,8 +11,9 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SmoreNMore.MODID);
 
-    // Non Edible item example:
-    // public static final DeferredItem<Item> MARSHMALLOW = ITEMS.registerSimpleItem("marshmallow");
+    /* ITEMS */
+
+    public static final DeferredItem<Item> MARSHMALLOW_ON_A_STICK = ITEMS.registerSimpleItem("marshmallow_on_a_stick");
 
     /* INGREDIENTS */
 

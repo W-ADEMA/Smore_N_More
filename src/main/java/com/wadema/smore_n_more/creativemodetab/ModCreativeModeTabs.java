@@ -20,6 +20,10 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.smore_n_more.smore_items"))
                     .displayItems((itemDisplayParameters, output) -> {
 
+                        /* ITEMS */
+
+                        output.accept(ModItems.MARSHMALLOW_ON_A_STICK);
+
                         /* INGREDIENTS */
 
                         output.accept(ModItems.MARSHMALLOW);

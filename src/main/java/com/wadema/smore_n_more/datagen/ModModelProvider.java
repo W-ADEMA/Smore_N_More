@@ -16,6 +16,9 @@ public class ModModelProvider extends ModelProvider {
     @Override
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
 
+        /* ITEMS */
+        itemModels.generateFlatItem(ModItems.MARSHMALLOW_ON_A_STICK.get(), ModelTemplates.FLAT_ITEM);
+
         /* INGREDIENTS */
 
         itemModels.generateFlatItem(ModItems.MARSHMALLOW.get(), ModelTemplates.FLAT_ITEM);

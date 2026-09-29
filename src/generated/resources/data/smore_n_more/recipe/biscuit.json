@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "biscuit",
+  "key": {
+    "A": "minecraft:wheat",
+    "B": "minecraft:sugar"
+  },
+  "pattern": [
+    "ABA"
+  ],
+  "result": {
+    "id": "smore_n_more:biscuit"
+  }
+}

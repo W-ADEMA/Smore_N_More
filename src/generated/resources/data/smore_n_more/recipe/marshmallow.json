@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "marshmallow",
+  "ingredients": [
+    "minecraft:sugar",
+    "minecraft:water_bucket",
+    "minecraft:slime_ball"
+  ],
+  "result": {
+    "count": 8,
+    "id": "smore_n_more:marshmallow"
+  }
+}

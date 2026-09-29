@@ -1,6 +1,7 @@
 package com.wadema.smore_n_more;
 
 import com.wadema.smore_n_more.datagen.ModModelProvider;
+import com.wadema.smore_n_more.datagen.ModRecipeProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -13,7 +14,9 @@ public class SmoreNMoreDataGen {
     public static void gatherClientData(GatherDataEvent.Client event) {
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
+        var lookupProvider = event.getLookupProvider();
 
         generator.addProvider(true, new ModModelProvider(packOutput));
+        generator.addProvider(true, new ModRecipeProvider.Runner(packOutput, lookupProvider));
     }
 }

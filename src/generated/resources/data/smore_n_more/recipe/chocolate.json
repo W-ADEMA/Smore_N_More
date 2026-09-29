@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "chocolate",
+  "ingredients": [
+    "minecraft:sugar",
+    "minecraft:milk_bucket",
+    "minecraft:cocoa_beans"
+  ],
+  "result": {
+    "count": 8,
+    "id": "smore_n_more:chocolate"
+  }
+}

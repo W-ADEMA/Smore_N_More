@@ -16,6 +16,12 @@ public class ModFoods {
     public static final Consumable MARSHMALLOW_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(1).build();
 
+    // Chocolate
+    public static final FoodProperties CHOCOLATE = new FoodProperties.Builder().nutrition(3).saturationModifier(1.2f).build();
+
+    public static final Consumable CHOCOLATE_CONSUMABLE = Consumables.defaultFood()
+            .consumeSeconds(1).build();
+
     // S'more
     public static final FoodProperties SMORE = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2f).build();
 

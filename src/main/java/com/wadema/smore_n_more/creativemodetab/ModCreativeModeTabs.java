@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
 
                         output.accept(ModItems.MARSHMALLOW);
+                        output.accept(ModItems.CHOCOLATE);
                         output.accept(ModItems.SMORE);
 
                     }).build());

@@ -20,9 +20,15 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.smore_n_more.smore_items"))
                     .displayItems((itemDisplayParameters, output) -> {
 
+                        /* INGREDIENTS */
+
                         output.accept(ModItems.MARSHMALLOW);
                         output.accept(ModItems.CHOCOLATE);
                         output.accept(ModItems.BISCUIT);
+
+                        /* S'MORES */
+
+                        output.accept(ModItems.EMPTY_SMORE);
                         output.accept(ModItems.SMORE);
 
                     }).build());

@@ -16,9 +16,15 @@ public class ModModelProvider extends ModelProvider {
     @Override
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
 
+        /* INGREDIENTS */
+
         itemModels.generateFlatItem(ModItems.MARSHMALLOW.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.CHOCOLATE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.BISCUIT.get(), ModelTemplates.FLAT_ITEM);
+
+        /* S'MORES */
+
+        itemModels.generateFlatItem(ModItems.EMPTY_SMORE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.SMORE.get(), ModelTemplates.FLAT_ITEM);
     }
 }

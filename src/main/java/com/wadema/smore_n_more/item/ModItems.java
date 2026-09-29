@@ -14,6 +14,8 @@ public class ModItems {
     // Non Edible item example:
     // public static final DeferredItem<Item> MARSHMALLOW = ITEMS.registerSimpleItem("marshmallow");
 
+    /* INGREDIENTS */
+
     // Marshmallow
     public static final DeferredItem<Item> MARSHMALLOW = ITEMS.registerItem("marshmallow",
             properties -> new Item(properties.food(ModFoods.MARSHMALLOW, ModFoods.MARSHMALLOW_CONSUMABLE)));
@@ -25,6 +27,12 @@ public class ModItems {
     // Biscuit
     public static final DeferredItem<Item> BISCUIT = ITEMS.registerItem("biscuit",
             properties -> new Item(properties.food(ModFoods.BISCUIT, ModFoods.BISCUIT_CONSUMABLE)));
+
+    /* S'MORES */
+
+    // Empty S'more
+    public static final DeferredItem<Item> EMPTY_SMORE = ITEMS.registerItem("empty_smore",
+            properties -> new Item(properties.food(ModFoods.EMPTY_SMORE, ModFoods.EMPTY_SMORE_CONSUMABLE)));
 
     // S'more
     public static final DeferredItem<Item> SMORE = ITEMS.registerItem("smore",

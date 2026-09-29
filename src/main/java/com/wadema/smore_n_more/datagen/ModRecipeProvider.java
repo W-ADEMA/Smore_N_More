@@ -10,6 +10,8 @@ import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.registries.DeferredItem;
+import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
+import net.minecraft.world.item.crafting.Ingredient;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -46,6 +48,17 @@ public class ModRecipeProvider extends RecipeProvider {
                 .requires(Items.STICK)
                 .unlockedBy(getHasName(ModItems.MARSHMALLOW.get()), has(ModItems.MARSHMALLOW))
                 .group("marshmallow_on_a_stick")
+                .save(output);
+
+        // Roasted marshmallow on a stick
+        SimpleCookingRecipeBuilder.campfireCooking(
+                        Ingredient.of(ModItems.MARSHMALLOW_ON_A_STICK.get()),
+                        RecipeCategory.FOOD,
+                        ModItems.ROASTED_MARSHMALLOW_ON_A_STICK.get(),
+                        0.35f,
+                        600
+                )
+                .unlockedBy(getHasName(ModItems.MARSHMALLOW_ON_A_STICK.get()), has(ModItems.MARSHMALLOW_ON_A_STICK))
                 .save(output);
 
         /* INGREDIENTS */
@@ -97,6 +110,8 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(ModItems.ROASTED_MARSHMALLOW_ON_A_STICK.get()), has(ModItems.ROASTED_MARSHMALLOW_ON_A_STICK))
                 .group("smores")
                 .save(output);
+
+
     }
 
 

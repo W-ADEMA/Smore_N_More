@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "smores",
+  "group": "empty_smores",
   "key": {
     "A": "smore_n_more:biscuit",
     "B": "smore_n_more:chocolate"

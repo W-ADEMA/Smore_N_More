@@ -87,7 +87,17 @@ public class ModRecipeProvider extends RecipeProvider {
                 .define('A', ModItems.BISCUIT.get())
                 .define('B', ModItems.CHOCOLATE.get())
                 .unlockedBy(getHasName(ModItems.BISCUIT.get()), has(ModItems.BISCUIT))
+                .group("empty_smores")
+                .save(output);
+
+        // S'more
+        shapeless(RecipeCategory.FOOD, ModItems.SMORE.get(), 1)
+                .requires(ModItems.EMPTY_SMORE.get())
+                .requires(ModItems.ROASTED_MARSHMALLOW_ON_A_STICK)
+                .unlockedBy(getHasName(ModItems.ROASTED_MARSHMALLOW_ON_A_STICK.get()), has(ModItems.ROASTED_MARSHMALLOW_ON_A_STICK))
                 .group("smores")
                 .save(output);
     }
+
+
 }

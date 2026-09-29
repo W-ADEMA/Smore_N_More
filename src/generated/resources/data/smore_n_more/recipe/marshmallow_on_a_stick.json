@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "group": "marshmallow",
+  "group": "marshmallow_on_a_stick",
   "ingredients": [
     "smore_n_more:marshmallow",
     "minecraft:stick"

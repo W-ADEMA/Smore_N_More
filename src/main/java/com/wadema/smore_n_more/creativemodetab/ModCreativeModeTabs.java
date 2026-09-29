@@ -22,6 +22,7 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModItems.MARSHMALLOW);
                         output.accept(ModItems.CHOCOLATE);
+                        output.accept(ModItems.BISCUIT);
                         output.accept(ModItems.SMORE);
 
                     }).build());

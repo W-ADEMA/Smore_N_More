@@ -18,6 +18,7 @@ public class ModModelProvider extends ModelProvider {
 
         itemModels.generateFlatItem(ModItems.MARSHMALLOW.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.CHOCOLATE.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.BISCUIT.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.SMORE.get(), ModelTemplates.FLAT_ITEM);
     }
 }

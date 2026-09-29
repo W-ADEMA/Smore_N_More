@@ -22,6 +22,10 @@ public class ModItems {
     public static final DeferredItem<Item> CHOCOLATE = ITEMS.registerItem("chocolate",
             properties -> new Item(properties.food(ModFoods.CHOCOLATE, ModFoods.CHOCOLATE_CONSUMABLE)));
 
+    // Biscuit
+    public static final DeferredItem<Item> BISCUIT = ITEMS.registerItem("biscuit",
+            properties -> new Item(properties.food(ModFoods.BISCUIT, ModFoods.BISCUIT_CONSUMABLE)));
+
     // S'more
     public static final DeferredItem<Item> SMORE = ITEMS.registerItem("smore",
             properties -> new Item(properties.food(ModFoods.SMORE, ModFoods.SMORE_CONSUMABLE)));

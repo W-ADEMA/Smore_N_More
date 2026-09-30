@@ -16,7 +16,7 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, SmoreNMore.MODID);
 
     public static final Supplier<CreativeModeTab> SMORE_ITEMS_TAB = CREATIVE_MODE_TABS.register("smore_items_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MARSHMALLOW.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SMORE.get()))
                     .title(Component.translatable("creativetab.smore_n_more.smore_items"))
                     .displayItems((itemDisplayParameters, output) -> {
 

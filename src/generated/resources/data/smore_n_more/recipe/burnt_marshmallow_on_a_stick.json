@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredient": "smore_n_more:roasted_marshmallow_on_a_stick",
+  "result": {
+    "id": "smore_n_more:burnt_marshmallow_on_a_stick"
+  }
+}

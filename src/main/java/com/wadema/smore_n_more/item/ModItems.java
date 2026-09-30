@@ -19,6 +19,9 @@ public class ModItems {
     // Roasted marshmallow on a stick
     public static final DeferredItem<Item> ROASTED_MARSHMALLOW_ON_A_STICK = ITEMS.registerSimpleItem("roasted_marshmallow_on_a_stick");
 
+    // Roasted marshmallow on a stick
+    public static final DeferredItem<Item> BURNT_MARSHMALLOW_ON_A_STICK = ITEMS.registerSimpleItem("burnt_marshmallow_on_a_stick");
+
     /* INGREDIENTS */
 
     // Marshmallow

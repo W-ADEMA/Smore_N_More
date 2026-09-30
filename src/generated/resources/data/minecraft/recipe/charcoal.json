@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "charcoal",
+  "ingredients": [
+    "smore_n_more:burnt_marshmallow_on_a_stick"
+  ],
+  "result": {
+    "id": "minecraft:charcoal"
+  }
+}

@@ -19,6 +19,7 @@ public class ModModelProvider extends ModelProvider {
         /* ITEMS */
         itemModels.generateFlatItem(ModItems.MARSHMALLOW_ON_A_STICK.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.ROASTED_MARSHMALLOW_ON_A_STICK.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.BURNT_MARSHMALLOW_ON_A_STICK.get(), ModelTemplates.FLAT_ITEM);
 
         /* INGREDIENTS */
 

@@ -61,6 +61,24 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(ModItems.MARSHMALLOW_ON_A_STICK.get()), has(ModItems.MARSHMALLOW_ON_A_STICK))
                 .save(output);
 
+        // Burnt marshmallow on a stick
+        SimpleCookingRecipeBuilder.campfireCooking(
+                        Ingredient.of(ModItems.ROASTED_MARSHMALLOW_ON_A_STICK.get()),
+                        RecipeCategory.FOOD,
+                        ModItems.BURNT_MARSHMALLOW_ON_A_STICK.get(),
+                        0.35f,
+                        600
+                )
+                .unlockedBy(getHasName(ModItems.ROASTED_MARSHMALLOW_ON_A_STICK.get()), has(ModItems.ROASTED_MARSHMALLOW_ON_A_STICK))
+                .save(output);
+
+        // Burnt marshmallow on a stick --> Charcoal
+        shapeless(RecipeCategory.MISC, Items.CHARCOAL, 1)
+                .requires(ModItems.BURNT_MARSHMALLOW_ON_A_STICK.get())
+                .unlockedBy(getHasName(ModItems.BURNT_MARSHMALLOW_ON_A_STICK.get()), has(ModItems.BURNT_MARSHMALLOW_ON_A_STICK))
+                .group("charcoal")
+                .save(output);
+
         /* INGREDIENTS */
 
         // Marshmallow

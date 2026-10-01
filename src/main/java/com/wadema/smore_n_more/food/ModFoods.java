@@ -43,4 +43,9 @@ public class ModFoods {
     public static final FoodProperties FLAMING_SMORE = new FoodProperties.Builder().nutrition(1).saturationModifier(1).build();
     public static final Consumable FLAMING_SMORE_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(2).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 2400))).build(); // 120 seconds
+
+    // Wet s'more
+    public static final FoodProperties WET_SMORE = new FoodProperties.Builder().nutrition(1).saturationModifier(1).build();
+    public static final Consumable WET_SMORE_CONSUMABLE = Consumables.defaultFood()
+            .consumeSeconds(2).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 2400))).build(); // 120 seconds
 }

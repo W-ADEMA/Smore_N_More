@@ -29,11 +29,6 @@ public class ModFoods {
 
     /* S'MORES */
 
-    // Empty S'more
-    public static final FoodProperties EMPTY_SMORE = new FoodProperties.Builder().nutrition(3).saturationModifier(1.2f).build();
-    public static final Consumable EMPTY_SMORE_CONSUMABLE = Consumables.defaultFood()
-            .consumeSeconds(1).build();
-
     // S'more
     public static final FoodProperties SMORE = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2f).build();
     public static final Consumable SMORE_CONSUMABLE = Consumables.defaultFood()

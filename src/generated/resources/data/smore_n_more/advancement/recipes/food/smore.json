@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_roasted_marshmallow_on_a_stick": {
+    "has_biscuit": {
       "conditions": {
         "items": [
           {
-            "items": "smore_n_more:roasted_marshmallow_on_a_stick"
+            "items": "smore_n_more:biscuit"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_roasted_marshmallow_on_a_stick"
+      "has_biscuit"
     ]
   ],
   "rewards": {

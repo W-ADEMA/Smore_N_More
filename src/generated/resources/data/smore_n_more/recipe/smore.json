@@ -1,10 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shaped",
   "category": "misc",
   "group": "smores",
-  "ingredients": [
-    "smore_n_more:empty_smore",
-    "smore_n_more:roasted_marshmallow_on_a_stick"
+  "key": {
+    "A": "smore_n_more:biscuit",
+    "B": "smore_n_more:chocolate",
+    "C": "smore_n_more:roasted_marshmallow_on_a_stick"
+  },
+  "pattern": [
+    " A ",
+    "BC ",
+    " A "
   ],
   "result": {
     "id": "smore_n_more:smore"

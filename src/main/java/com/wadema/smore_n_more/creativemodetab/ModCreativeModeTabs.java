@@ -34,7 +34,6 @@ public class ModCreativeModeTabs {
 
                         /* S'MORES */
 
-                        output.accept(ModItems.EMPTY_SMORE);
                         output.accept(ModItems.SMORE);
 
                     }).build());

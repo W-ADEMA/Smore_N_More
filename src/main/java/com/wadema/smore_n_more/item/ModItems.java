@@ -38,10 +38,6 @@ public class ModItems {
 
     /* S'MORES */
 
-    // Empty S'more
-    public static final DeferredItem<Item> EMPTY_SMORE = ITEMS.registerItem("empty_smore",
-            properties -> new Item(properties.food(ModFoods.EMPTY_SMORE, ModFoods.EMPTY_SMORE_CONSUMABLE)));
-
     // S'more
     public static final DeferredItem<Item> SMORE = ITEMS.registerItem("smore",
             properties -> new Item(properties.food(ModFoods.SMORE, ModFoods.SMORE_CONSUMABLE)));

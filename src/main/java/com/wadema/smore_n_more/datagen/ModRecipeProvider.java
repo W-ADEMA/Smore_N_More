@@ -159,5 +159,16 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(ModItems.BISCUIT.get()), has(ModItems.BISCUIT))
                 .group("smores")
                 .save(output);
+
+        // Golden s'more
+        shaped(RecipeCategory.FOOD, ModItems.GOLDEN_SMORE.get(), 1)
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .define('A', Items.GOLD_INGOT)
+                .define('B', ModItems.SMORE.get())
+                .unlockedBy(getHasName(ModItems.BISCUIT.get()), has(ModItems.BISCUIT))
+                .group("smores")
+                .save(output);
     }
 }

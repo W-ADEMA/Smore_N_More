@@ -48,4 +48,21 @@ public class ModFoods {
     public static final FoodProperties WET_SMORE = new FoodProperties.Builder().nutrition(1).saturationModifier(1).build();
     public static final Consumable WET_SMORE_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(2).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 2400))).build(); // 120 seconds
+
+    // Golden s'more
+    public static final FoodProperties GOLDEN_SMORE = new FoodProperties.Builder().nutrition(1).saturationModifier(1).build();
+    public static final Consumable GOLDEN_SMORE_CONSUMABLE = Consumables.defaultFood()
+            .consumeSeconds(2)
+            .onConsume(new ApplyStatusEffectsConsumeEffect(
+                    new MobEffectInstance(MobEffects.REGENERATION, 200, 1) // 10 seconds
+            ))
+            .onConsume(new ApplyStatusEffectsConsumeEffect(
+                    new MobEffectInstance(MobEffects.RESISTANCE, 3000, 0) // 150 seconds
+            ))
+            .onConsume(new ApplyStatusEffectsConsumeEffect(
+                    new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 3000, 0) // 150 seconds
+            ))
+            .onConsume(new ApplyStatusEffectsConsumeEffect(
+                    new MobEffectInstance(MobEffects.ABSORPTION, 1200, 3) // 60 seconds
+            )).build();
 }

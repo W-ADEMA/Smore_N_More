@@ -54,6 +54,10 @@ public class ModItems {
     public static final DeferredItem<Item> WET_SMORE = ITEMS.registerItem("wet_smore",
             properties -> new Item(properties.food(ModFoods.WET_SMORE, ModFoods.WET_SMORE_CONSUMABLE)));
 
+    // Golden s'more
+    public static final DeferredItem<Item> GOLDEN_SMORE = ITEMS.registerItem("golden_smore",
+            properties -> new Item(properties.food(ModFoods.GOLDEN_SMORE, ModFoods.GOLDEN_SMORE_CONSUMABLE)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "smores",
+  "key": {
+    "A": "minecraft:gold_ingot",
+    "B": "smore_n_more:smore"
+  },
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "id": "smore_n_more:golden_smore"
+  }
+}

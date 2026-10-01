@@ -121,6 +121,18 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(ModItems.BISCUIT.get()), has(ModItems.BISCUIT))
                 .group("smores")
                 .save(output);
+
+        // Burnt s'more
+        shaped(RecipeCategory.FOOD, ModItems.BURNT_SMORE.get(), 1)
+                .pattern(" A ")
+                .pattern("BC ")
+                .pattern(" A ")
+                .define('A', ModItems.BISCUIT.get())
+                .define('B', ModItems.CHOCOLATE.get())
+                .define('C', ModItems.BURNT_MARSHMALLOW_ON_A_STICK.get())
+                .unlockedBy(getHasName(ModItems.BISCUIT.get()), has(ModItems.BISCUIT))
+                .group("smores")
+                .save(output);
     }
 
 

@@ -35,6 +35,7 @@ public class ModCreativeModeTabs {
                         /* S'MORES */
 
                         output.accept(ModItems.SMORE);
+                        output.accept(ModItems.BURNT_SMORE);
 
                     }).build());
 

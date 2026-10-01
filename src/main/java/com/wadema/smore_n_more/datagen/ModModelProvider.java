@@ -30,5 +30,6 @@ public class ModModelProvider extends ModelProvider {
         /* S'MORES */
 
         itemModels.generateFlatItem(ModItems.SMORE.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.BURNT_SMORE.get(), ModelTemplates.FLAT_ITEM);
     }
 }

@@ -16,8 +16,8 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, SmoreNMore.MODID);
 
     public static final Supplier<CreativeModeTab> SMORE_ITEMS_TAB = CREATIVE_MODE_TABS.register("smore_items_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SMORE.get()))
-                    .title(Component.translatable("creativetab.smore_n_more.smore_items"))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.MARSHMALLOW.get()))
+                    .title(Component.translatable("creativetab.smore_n_more.smore_items_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
 
                         /* ITEMS */
@@ -31,6 +31,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.MARSHMALLOW);
                         output.accept(ModItems.CHOCOLATE);
                         output.accept(ModItems.BISCUIT);
+
+                    }).build());
+
+    public static final Supplier<CreativeModeTab> SMORES_TAB = CREATIVE_MODE_TABS.register("smores_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SMORE.get()))
+                    .title(Component.translatable("creativetab.smore_n_more.smores_tab"))
+                    .displayItems((itemDisplayParameters, output) -> {
 
                         /* S'MORES */
 

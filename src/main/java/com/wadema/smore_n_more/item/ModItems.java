@@ -46,6 +46,10 @@ public class ModItems {
     public static final DeferredItem<Item> BURNT_SMORE = ITEMS.registerItem("burnt_smore",
             properties -> new Item(properties.food(ModFoods.BURNT_SMORE, ModFoods.BURNT_SMORE_CONSUMABLE)));
 
+    // Flaming s'more
+    public static final DeferredItem<Item> FLAMING_SMORE = ITEMS.registerItem("flaming_smore",
+            properties -> new Item(properties.food(ModFoods.FLAMING_SMORE, ModFoods.FLAMING_SMORE_CONSUMABLE)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

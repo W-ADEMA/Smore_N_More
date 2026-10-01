@@ -32,10 +32,15 @@ public class ModFoods {
     // S'more
     public static final FoodProperties SMORE = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2f).build();
     public static final Consumable SMORE_CONSUMABLE = Consumables.defaultFood()
-            .consumeSeconds(2).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.ABSORPTION, 100))).build(); // 5 seconds
+            .consumeSeconds(2).build();
 
     // Burnt s'more
     public static final FoodProperties BURNT_SMORE = new FoodProperties.Builder().nutrition(1).saturationModifier(1).build();
     public static final Consumable BURNT_SMORE_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(2).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.NAUSEA, 200))).build(); // 10 seconds
+
+    // Burnt s'more
+    public static final FoodProperties FLAMING_SMORE = new FoodProperties.Builder().nutrition(1).saturationModifier(1).build();
+    public static final Consumable FLAMING_SMORE_CONSUMABLE = Consumables.defaultFood()
+            .consumeSeconds(2).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 2400))).build(); // 120 seconds
 }

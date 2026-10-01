@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "smores",
+  "key": {
+    "A": "smore_n_more:biscuit",
+    "B": "smore_n_more:chocolate",
+    "C": "smore_n_more:roasted_marshmallow_on_a_stick",
+    "D": "minecraft:blaze_powder"
+  },
+  "pattern": [
+    " A ",
+    "BCD",
+    " A "
+  ],
+  "result": {
+    "id": "smore_n_more:flaming_smore"
+  }
+}

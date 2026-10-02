@@ -8,6 +8,11 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.minecraft.resources.Identifier;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.EquipmentSlotGroup;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(SmoreNMore.MODID);
@@ -22,6 +27,31 @@ public class ModItems {
 
     // Roasted marshmallow on a stick
     public static final DeferredItem<Item> BURNT_MARSHMALLOW_ON_A_STICK = ITEMS.registerSimpleItem("burnt_marshmallow_on_a_stick");
+
+    /* TOOLS */
+
+    // Marshmallow sword
+    public static final DeferredItem<Item> MARSHMALLOW_SWORD =
+            ITEMS.registerItem("marshmallow_sword", properties -> new MarshmallowSwordItem(properties
+                    .sword(ModToolTiers.MARSHMALLOW, 0, -2.4f).attributes(ItemAttributeModifiers.builder()
+                            .add(Attributes.ATTACK_DAMAGE, new AttributeModifier(
+                                Identifier.fromNamespaceAndPath(
+                                        SmoreNMore.MODID,
+                                        "marshmallow_sword_damage"
+                                ),
+                                -0.9,
+                                AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND
+                            )
+                            .add(Attributes.ATTACK_KNOCKBACK, new AttributeModifier(
+                                Identifier.fromNamespaceAndPath(
+                                        SmoreNMore.MODID,
+                                        "marshmallow_sword_knockback"
+                                ),
+                                3.0,
+                                AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND
+                            ).build()
+                    ))
+            );
 
     /* INGREDIENTS */
 

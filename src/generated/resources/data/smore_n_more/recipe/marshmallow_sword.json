@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "marshmallow_sword",
+  "key": {
+    "A": "smore_n_more:marshmallow",
+    "B": "minecraft:stick"
+  },
+  "pattern": [
+    "A",
+    "A",
+    "B"
+  ],
+  "result": {
+    "id": "smore_n_more:marshmallow_sword"
+  }
+}

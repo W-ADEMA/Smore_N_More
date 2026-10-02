@@ -26,6 +26,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ROASTED_MARSHMALLOW_ON_A_STICK);
                         output.accept(ModItems.BURNT_MARSHMALLOW_ON_A_STICK);
 
+                        /* TOOLS */
+
+                        output.accept(ModItems.MARSHMALLOW_SWORD);
+
                         /* INGREDIENTS */
 
                         output.accept(ModItems.MARSHMALLOW);

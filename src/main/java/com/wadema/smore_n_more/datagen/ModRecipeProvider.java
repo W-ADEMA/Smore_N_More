@@ -79,6 +79,19 @@ public class ModRecipeProvider extends RecipeProvider {
                 .group("charcoal")
                 .save(output);
 
+        /* TOOLS */
+
+        // Marshmallow Sword
+        shaped(RecipeCategory.COMBAT, ModItems.MARSHMALLOW_SWORD.get(), 1)
+                .pattern("A")
+                .pattern("A")
+                .pattern("B")
+                .define('A', ModItems.MARSHMALLOW.get())
+                .define('B', Items.STICK)
+                .unlockedBy(getHasName(ModItems.MARSHMALLOW.get()), has(ModItems.MARSHMALLOW))
+                .group("marshmallow_sword")
+                .save(output);
+
         /* INGREDIENTS */
 
         // Marshmallow

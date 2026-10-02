@@ -17,9 +17,14 @@ public class ModModelProvider extends ModelProvider {
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
 
         /* ITEMS */
+
         itemModels.generateFlatItem(ModItems.MARSHMALLOW_ON_A_STICK.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.ROASTED_MARSHMALLOW_ON_A_STICK.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.BURNT_MARSHMALLOW_ON_A_STICK.get(), ModelTemplates.FLAT_ITEM);
+
+        /* TOOLS */
+
+        itemModels.generateFlatItem(ModItems.MARSHMALLOW_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
 
         /* INGREDIENTS */
 

@@ -58,6 +58,10 @@ public class ModItems {
     public static final DeferredItem<Item> GOLDEN_SMORE = ITEMS.registerItem("golden_smore",
             properties -> new Item(properties.food(ModFoods.GOLDEN_SMORE, ModFoods.GOLDEN_SMORE_CONSUMABLE)));
 
+    // Ender s'more
+    public static final DeferredItem<Item> ENDER_SMORE = ITEMS.registerItem("ender_smore",
+            properties -> new Item(properties.food(ModFoods.ENDER_SMORE, ModFoods.ENDER_SMORE_CONSUMABLE)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

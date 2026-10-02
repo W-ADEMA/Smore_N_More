@@ -46,6 +46,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.FLAMING_SMORE);
                         output.accept(ModItems.WET_SMORE);
                         output.accept(ModItems.GOLDEN_SMORE);
+                        output.accept(ModItems.ENDER_SMORE);
 
                     }).build());
 

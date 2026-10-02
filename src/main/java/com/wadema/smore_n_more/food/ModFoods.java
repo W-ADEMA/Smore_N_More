@@ -65,4 +65,9 @@ public class ModFoods {
             .onConsume(new ApplyStatusEffectsConsumeEffect(
                     new MobEffectInstance(MobEffects.ABSORPTION, 1200, 3) // 60 seconds
             )).build();
+
+    // Ender s'more
+    public static final FoodProperties ENDER_SMORE = new FoodProperties.Builder().nutrition(1).saturationModifier(1).build();
+    public static final Consumable ENDER_SMORE_CONSUMABLE = Consumables.defaultFood()
+            .consumeSeconds(2).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.LEVITATION, 200))).build(); // 10 seconds
 }

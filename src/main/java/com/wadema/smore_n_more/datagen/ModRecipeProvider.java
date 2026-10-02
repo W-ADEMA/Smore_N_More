@@ -170,5 +170,18 @@ public class ModRecipeProvider extends RecipeProvider {
                 .unlockedBy(getHasName(ModItems.BISCUIT.get()), has(ModItems.BISCUIT))
                 .group("smores")
                 .save(output);
+
+        // Wet s'more
+        shaped(RecipeCategory.FOOD, ModItems.ENDER_SMORE.get(), 1)
+                .pattern(" A ")
+                .pattern("BCD")
+                .pattern(" A ")
+                .define('A', ModItems.BISCUIT.get())
+                .define('B', ModItems.CHOCOLATE.get())
+                .define('C', ModItems.ROASTED_MARSHMALLOW_ON_A_STICK.get())
+                .define('D', Items.CHORUS_FRUIT)
+                .unlockedBy(getHasName(ModItems.BISCUIT.get()), has(ModItems.BISCUIT))
+                .group("smores")
+                .save(output);
     }
 }

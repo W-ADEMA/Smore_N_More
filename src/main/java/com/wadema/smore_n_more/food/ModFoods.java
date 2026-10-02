@@ -30,27 +30,27 @@ public class ModFoods {
     /* S'MORES */
 
     // S'more
-    public static final FoodProperties SMORE = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2f).build();
+    public static final FoodProperties SMORE = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2f).alwaysEdible().build();
     public static final Consumable SMORE_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(2).build();
 
     // Burnt s'more
-    public static final FoodProperties BURNT_SMORE = new FoodProperties.Builder().nutrition(1).saturationModifier(1).build();
+    public static final FoodProperties BURNT_SMORE = new FoodProperties.Builder().nutrition(1).saturationModifier(1).alwaysEdible().build();
     public static final Consumable BURNT_SMORE_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(2).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.NAUSEA, 200))).build(); // 10 seconds
 
     // Flaming s'more
-    public static final FoodProperties FLAMING_SMORE = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2f).build();
+    public static final FoodProperties FLAMING_SMORE = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2f).alwaysEdible().build();
     public static final Consumable FLAMING_SMORE_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(2).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 2400))).build(); // 120 seconds
 
     // Wet s'more
-    public static final FoodProperties WET_SMORE = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2f).build();
+    public static final FoodProperties WET_SMORE = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2f).alwaysEdible().build();
     public static final Consumable WET_SMORE_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(2).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 2400))).build(); // 120 seconds
 
     // Golden s'more
-    public static final FoodProperties GOLDEN_SMORE = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2f).build();
+    public static final FoodProperties GOLDEN_SMORE = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2f).alwaysEdible().build();
     public static final Consumable GOLDEN_SMORE_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(2)
             .onConsume(new ApplyStatusEffectsConsumeEffect(
@@ -67,22 +67,22 @@ public class ModFoods {
             )).build();
 
     // Ender s'more
-    public static final FoodProperties ENDER_SMORE = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2f).build();
+    public static final FoodProperties ENDER_SMORE = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2f).alwaysEdible().build();
     public static final Consumable ENDER_SMORE_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(2).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.LEVITATION, 200))).build(); // 10 seconds
 
     // Fishy s'more
-    public static final FoodProperties FISHY_SMORE = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2f).build();
+    public static final FoodProperties FISHY_SMORE = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2f).alwaysEdible().build();
     public static final Consumable FISHY_SMORE_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(2).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 600))).build(); // 30 seconds
 
     // Zombie s'more
-    public static final FoodProperties ZOMBIE_SMORE = new FoodProperties.Builder().nutrition(1).saturationModifier(1).build();
+    public static final FoodProperties ZOMBIE_SMORE = new FoodProperties.Builder().nutrition(1).saturationModifier(1).alwaysEdible().build();
     public static final Consumable ZOMBIE_SMORE_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(2).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HUNGER, 200))).build(); // 10 seconds
 
     // Creeper s'more
-    public static final FoodProperties CREEPER_SMORE = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2f).build();
+    public static final FoodProperties CREEPER_SMORE = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2f).alwaysEdible().build();
     public static final Consumable CREEPER_SMORE_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(2).build();
 }

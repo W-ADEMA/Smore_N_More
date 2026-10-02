@@ -75,4 +75,9 @@ public class ModFoods {
     public static final FoodProperties FISHY_SMORE = new FoodProperties.Builder().nutrition(6).saturationModifier(1.2f).build();
     public static final Consumable FISHY_SMORE_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(2).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 600))).build(); // 30 seconds
+
+    // Zombie s'more
+    public static final FoodProperties ZOMBIE_SMORE = new FoodProperties.Builder().nutrition(1).saturationModifier(1).build();
+    public static final Consumable ZOMBIE_SMORE_CONSUMABLE = Consumables.defaultFood()
+            .consumeSeconds(2).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.HUNGER, 200))).build(); // 10 seconds
 }

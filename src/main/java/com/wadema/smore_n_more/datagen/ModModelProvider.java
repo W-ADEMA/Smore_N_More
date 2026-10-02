@@ -36,5 +36,6 @@ public class ModModelProvider extends ModelProvider {
         itemModels.generateFlatItem(ModItems.GOLDEN_SMORE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.ENDER_SMORE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.FISHY_SMORE.get(), ModelTemplates.FLAT_ITEM);
+        itemModels.generateFlatItem(ModItems.ZOMBIE_SMORE.get(), ModelTemplates.FLAT_ITEM);
     }
 }

@@ -62,6 +62,10 @@ public class ModItems {
     public static final DeferredItem<Item> ENDER_SMORE = ITEMS.registerItem("ender_smore",
             properties -> new Item(properties.food(ModFoods.ENDER_SMORE, ModFoods.ENDER_SMORE_CONSUMABLE)));
 
+    // Fishy s'more
+    public static final DeferredItem<Item> FISHY_SMORE = ITEMS.registerItem("fishy_smore",
+            properties -> new Item(properties.food(ModFoods.FISHY_SMORE, ModFoods.FISHY_SMORE_CONSUMABLE)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

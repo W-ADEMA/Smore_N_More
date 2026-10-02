@@ -70,4 +70,9 @@ public class ModFoods {
     public static final FoodProperties ENDER_SMORE = new FoodProperties.Builder().nutrition(1).saturationModifier(1).build();
     public static final Consumable ENDER_SMORE_CONSUMABLE = Consumables.defaultFood()
             .consumeSeconds(2).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.LEVITATION, 200))).build(); // 10 seconds
+
+    // Fishy s'more
+    public static final FoodProperties FISHY_SMORE = new FoodProperties.Builder().nutrition(1).saturationModifier(1).build();
+    public static final Consumable FISHY_SMORE_CONSUMABLE = Consumables.defaultFood()
+            .consumeSeconds(2).onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 600))).build(); // 30 seconds
 }

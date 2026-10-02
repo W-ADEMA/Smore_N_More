@@ -49,6 +49,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ENDER_SMORE);
                         output.accept(ModItems.FISHY_SMORE);
                         output.accept(ModItems.ZOMBIE_SMORE);
+                        output.accept(ModItems.CREEPER_SMORE);
 
                     }).build());
 

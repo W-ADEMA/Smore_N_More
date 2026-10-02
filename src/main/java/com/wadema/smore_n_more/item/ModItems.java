@@ -1,6 +1,7 @@
 package com.wadema.smore_n_more.item;
 
 import com.wadema.smore_n_more.SmoreNMore;
+import com.wadema.smore_n_more.food.ExplodingFoodItem;
 import com.wadema.smore_n_more.food.ModFoods;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
@@ -66,9 +67,13 @@ public class ModItems {
     public static final DeferredItem<Item> FISHY_SMORE = ITEMS.registerItem("fishy_smore",
             properties -> new Item(properties.food(ModFoods.FISHY_SMORE, ModFoods.FISHY_SMORE_CONSUMABLE)));
 
-    // Fishy s'more
+    // Zombie s'more
     public static final DeferredItem<Item> ZOMBIE_SMORE = ITEMS.registerItem("zombie_smore",
             properties -> new Item(properties.food(ModFoods.ZOMBIE_SMORE, ModFoods.ZOMBIE_SMORE_CONSUMABLE)));
+
+    // Creeper s'more
+    public static final DeferredItem<Item> CREEPER_SMORE = ITEMS.registerItem("creeper_smore",
+            properties -> new ExplodingFoodItem(properties.food(ModFoods.CREEPER_SMORE, ModFoods.CREEPER_SMORE_CONSUMABLE)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
